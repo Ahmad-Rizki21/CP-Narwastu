@@ -4,11 +4,12 @@ export default function LayananPage() {
   return (
     <>
       {/* Hero Section dengan Gradient Background */}
-      <section className="relative bg-gradient-to-br from-narwastu-red-800 via-narwastu-red-900 to-narwastu-burgundy text-white py-24 lg:py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 via-red-900/95 to-slate-900 text-white py-24 lg:py-32 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-48 -translate-y-48 blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-48 translate-y-48 blur-3xl"></div>
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpolygon points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E")`,
+          }}></div>
         </div>
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

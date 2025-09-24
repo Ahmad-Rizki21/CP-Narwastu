@@ -30,24 +30,24 @@ export default function MitraKlienPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      {/* Hero Section with Parallax Effect */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-narwastu-maroon">
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-20" />
-        <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="relative z-10 text-center px-4"
-        >
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight drop-shadow-lg">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-red-900/95 to-slate-900 text-white py-24 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpolygon points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E")`,
+          }}></div>
+        </div>
+        
+        <div className="container mx-auto px-6 text-center relative z-10">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
             Mitra & Klien Kami
             </h1>
-            <p className="text-xl md:text-2xl text-white max-w-3xl mx-auto font-light drop-shadow">
+            <p className="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto leading-relaxed">
             Membangun Kesuksesan Bersama Melalui Kemitraan yang Kuat
             </p>
-        </motion.div>
-        </section>
+        </div>
+      </section>
 
       {/* Partners Section */}
       <section className="py-24 px-4">

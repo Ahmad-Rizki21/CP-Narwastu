@@ -1,4 +1,5 @@
 // src/components/Footer.tsx
+import Link from 'next/link';
 import Image from 'next/image';
 
 
@@ -49,10 +50,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Menu</h3>
             <ul className="space-y-3">
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors duration-200">Beranda</a></li>
-              <li><a href="/layanan" className="text-gray-400 hover:text-white transition-colors duration-200">Layanan</a></li>
-              <li><a href="/tentang-kami" className="text-gray-400 hover:text-white transition-colors duration-200">Tentang Kami</a></li>
-              <li><a href="/kontak" className="text-gray-400 hover:text-white transition-colors duration-200">Kontak</a></li>
+              <li><Link href="/" className="text-gray-400 hover:text-white transition-colors duration-200">Beranda</Link></li>
+              <li><Link href="/layanan" className="text-gray-400 hover:text-white transition-colors duration-200">Layanan</Link></li>
+              <li><Link href="/tentang-kami" className="text-gray-400 hover:text-white transition-colors duration-200">Tentang Kami</Link></li>
+              <li><Link href="/kontak" className="text-gray-400 hover:text-white transition-colors duration-200">Kontak</Link></li>
             </ul>
           </div>
 
@@ -89,12 +90,12 @@ export default function Footer() {
             &copy; {currentYear} PT. Narwastu Artha Tama. All Rights Reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+            <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
               Privacy Policy
-            </a>
-            <a href="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
+            </Link>
+            <Link href="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors duration-200">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>

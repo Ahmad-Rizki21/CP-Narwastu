@@ -279,7 +279,7 @@ export default function TentangKamiPage() {
                   <h3 className="text-3xl font-bold text-red-400">Visi Kami</h3>
                 </div>
                 <blockquote className="text-gray-200 text-xl leading-relaxed font-medium">
-                  "Menjadi Perusahaan IT Solution yang <span className="text-red-400 font-bold">Inovatif</span>, <span className="text-red-400 font-bold">Terdepan</span> dan <span className="text-red-400 font-bold">Terpercaya</span>."
+                  &quot;Menjadi Perusahaan IT Solution yang <span className="text-red-400 font-bold">Inovatif</span>, <span className="text-red-400 font-bold">Terdepan</span> dan <span className="text-red-400 font-bold">Terpercaya</span>.&quot;
                 </blockquote>
               </div>
             </div>

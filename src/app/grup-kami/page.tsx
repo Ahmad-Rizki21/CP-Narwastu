@@ -4,11 +4,12 @@ export default function GrupKamiPage() {
   return (
     <>
       {/* Hero Section dengan Gradient dan Animasi */}
-      <section className="relative bg-gradient-to-br from-narwastu-800 via-narwastu-900 to-black text-white py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 via-red-900/95 to-slate-900 text-white py-24 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-narwastu-red-400 rounded-full blur-3xl"></div>
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpolygon points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E")`,
+          }}></div>
         </div>
         
         <div className="container mx-auto px-6 text-center relative z-10">
@@ -206,8 +207,12 @@ export default function GrupKamiPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-gradient-to-r from-narwastu-800 to-narwastu-900 py-16">
-        <div className="container mx-auto px-6">
+      <section className="relative bg-gradient-to-br from-red-900 via-red-800 to-orange-900 text-white py-16 overflow-hidden">
+        {/* Animated Background */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iNCIvPjwvZz48L2c+PC9zdmc+')] opacity-20"></div>
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
           <div className="grid md:grid-cols-3 gap-8 text-center text-white">
             <div className="transform hover:scale-105 transition-transform duration-300">
               <div className="text-4xl md:text-5xl font-bold mb-2 text-narwastu-red-200">2</div>
